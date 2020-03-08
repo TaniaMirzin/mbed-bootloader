@@ -79,7 +79,7 @@
         "MBED_CLOUD_CLIENT_UPDATE_STORAGE=ARM_UCP_FLASHIAP_BLOCKDEVICE",
         "MBED_BOOTLOADER_ACTIVE_HEADER_REGION_SIZE=(1024)",
         "APP_KVSTORE_SIZE=(2*16*1024)",
-        "MBED_APP_SIZE=0x100000"
+        "MBED_APP_SIZE=0x120000"
     ],
     "target_overrides": {
         "*": {
@@ -98,9 +98,10 @@
             "storage_tdb_internal.internal_size"        : "256*1024",
             "update-client.application-details"         : "0x8020000",
             "mbed-bootloader.application-start-address" : "0x8020400",
-            "update-client.storage-size"                : "0xa0000",
+            "update-client.storage-size"                : "0x100000",
             "mbed-bootloader.bootloader-size"           : "0x20000",
-            "target.mbed_rom_start"                     : "0x08000000"
+            "target.mbed_rom_start"                     : "0x08000000",
+            "target.mbed_rom_size"                      : "0x00120000"
         }
     }
 }
